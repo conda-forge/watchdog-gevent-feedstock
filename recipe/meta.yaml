@@ -1,5 +1,5 @@
 {% set name = "watchdog-gevent" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/watchdog_gevent-{{ version }}.tar.gz
-  sha256: 71dced5ec451b3deafd1dc73baaf52a7ce4d54d9a1eb606f9370235125f2424a
+  sha256: beb63c4484b93301dd3a2383a072a7598269b88ab84df17fc58ca487eda5deff
 
 build:
   noarch: python
@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - gevent >=1.1
-    - python
+    - python >=3.6
     - watchdog >=0.8
 
 test:
@@ -29,15 +29,13 @@ test:
 
 about:
   home: https://github.com/Bogdanp/watchdog_gevent
-  license: APACHE-2.0
-  license_family: Apache
-  # License file missing in Setup Script
-  # https://github.com/Bogdanp/watchdog_gevent/issues/1
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
   summary: A gevent-based observer for watchdog.
   dev_url: https://github.com/Bogdanp/watchdog_gevent
 
 extra:
   recipe-maintainers:
     - lincrosenbach
-    - nicoddemus 
+    - nicoddemus
