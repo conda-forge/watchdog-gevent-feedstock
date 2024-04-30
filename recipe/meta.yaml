@@ -30,10 +30,8 @@ test:
 about:
   home: https://github.com/Bogdanp/watchdog_gevent
   license: APACHE-2.0
-  license_family: Apache
-  # License file missing in Setup Script
-  # https://github.com/Bogdanp/watchdog_gevent/issues/1
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_family: Apache-2.0
+  license_file: LICENSE
   summary: A gevent-based observer for watchdog.
   dev_url: https://github.com/Bogdanp/watchdog_gevent
 
