@@ -29,8 +29,8 @@ test:
 
 about:
   home: https://github.com/Bogdanp/watchdog_gevent
-  license: APACHE-2.0
-  license_family: Apache-2.0
+  license: Apache-2.0
+  license_family: APACHE
   license_file: LICENSE
   summary: A gevent-based observer for watchdog.
   dev_url: https://github.com/Bogdanp/watchdog_gevent
