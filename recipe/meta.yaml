@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - gevent >=1.1
-    - python
+    - python >=3.6
     - watchdog >=0.8
 
 test:
