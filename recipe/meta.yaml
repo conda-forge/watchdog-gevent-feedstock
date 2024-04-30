@@ -1,5 +1,5 @@
 {% set name = "watchdog-gevent" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/watchdog_gevent-{{ version }}.tar.gz
-  sha256: 71dced5ec451b3deafd1dc73baaf52a7ce4d54d9a1eb606f9370235125f2424a
+  sha256: beb63c4484b93301dd3a2383a072a7598269b88ab84df17fc58ca487eda5deff
 
 build:
   noarch: python
@@ -40,4 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - lincrosenbach
-    - nicoddemus 
+    - nicoddemus
