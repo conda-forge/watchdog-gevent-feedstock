@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/watchdog-gevent
 
 Home: https://github.com/Bogdanp/watchdog_gevent
 
-Package license: APACHE-2.0
+Package license: Apache-2.0
 
 Summary: A gevent-based observer for watchdog.
 
