@@ -6,25 +6,27 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/watchdog_gevent-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/watchdog_gevent-{{ version }}.tar.gz
   sha256: ae6b94d0f8c8ce1c5956cd865f612b61f456cf19801744bba25a349fe8e8c337
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
     - gevent >=1.1
-    - python >=3.6
+    - python >={{ python_min }}
     - watchdog >=0.8
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - watchdog_gevent
 
